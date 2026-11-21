@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                min-height: 100vh;
+                background: linear-gradient(135deg, #123531, #1B4440 50%, #2B5A54);
+                font-family: Arial, sans-serif;
+                color: #efcbae;
+            }
+
+            .menu-ribbon {
+                width: 100%;
+                background-color: transparent;
+            }
+
+            .menu-ribbon nav {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                max-width: 1200px;
+                height: 72px;
+                margin: 0 auto;
+                padding: 0 clamp(8px, 3vw, 24px);
+            }
+
+            #logo {
+                width: clamp(64px, 20vw, 125px);
+                height: auto;
+                flex-shrink: 1;
+            }
+
+            .menu {
+                display: flex;
+                gap: clamp(12px, 2vw, 24px);
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                margin-left: auto;
+            }
+
+            .menu a {
+                display: block;
+                padding: 12px clamp(4px, 1.5vw, 18px);
+                border-radius: 6px;
+                color: #FFFFFF;
+                font-size: clamp(10px, 3.5vw, 16px);
+                font-weight: 600;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+            .menu a:hover,
+            .menu a:focus {
+                background-color: rgba(255, 255, 255, 0.14);
+                color: #FFFFFF;
+            }
+
+            #splash {
+                display: flex;
+                width: 75%;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                margin: 2rem auto;
+                text-align: center;
+            }
+
+            #logo-large {
+                display: block;
+                width: clamp(120px, 20vw, 150px);
+                max-width: 100%;
+                height: auto;
+            }
+
+            #splash h1,
+            #splash h2 {
+                font-family: Cambria, serif;
+                margin: 0;
+            }
+
+            #splash h1 {
+                font-size: clamp(2.5rem, 6vw, 4rem);
+                letter-spacing: 0.2em;
+            }
+
+            #splash h2 {
+                font-size: clamp(1rem, 2.4vw, 1.5rem);
+            }
+
+            #flow {
+                height: 90px;
+            }
+
+            #splash h3 {
+                margin: 0;
+                font-weight: 400;
+            }
+
+            #splash button {
+                margin-top: 0.25rem;
+                padding: 18px 36px;
+                border: 1px solid #efcbae;
+                border-radius: 4px;
+                background: transparent;
+                color: #efcbae;
+                font: inherit;
+                font-size: 1.2rem;
+                font-weight: 700;
+                cursor: pointer;
+                transition: background-color 0.2s ease, color 0.2s ease;
+            }
+
+            #splash button:hover,
+            #splash button:focus-visible {
+                background-color: #efcbae;
+                color: #1B4440;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="menu-ribbon">
+            <nav aria-label="Main menu">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="125" height="30" viewBox="0 0 33 8">
+                    <text x="7.75" y="6" transform="scale(1.0159217,.98432783)" fill="#FFFFFF" font-family="Cambria" font-size="6" font-weight="400" letter-spacing=".5">AUCENS</text>
+                    <circle cx="4" cy="4" r="2.5" fill="none" stroke="#FFFFFF" stroke-width=".0760537" stroke-linecap="round"/>
+                    <circle cx="4" cy="2.392863" r=".11972982" fill="#FFFFFF"/>
+                    <path d="m2.75 5.25 1.25-2.25 1.25 2.25" fill="none" stroke="#FFFFFF" stroke-width=".0732656" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="m 3.2,4.5 c 0,0 0.1798612,0.2033346 0.3,0.2 0.1666025,-0.00462 0.2333333,-0.3 0.4,-0.3 0.1666667,0 0.2349951,0.276523 0.4,0.3 0.186944,0.026598 0.28,-0.45 0.53,-0.2" fill="none" stroke="#FFFFFF" stroke-width=".0732656" stroke-linecap="round"/>
+                </svg>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="splash">
+            <svg id="logo-large" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="1.25 1.25 5.5 5.5">
+                <circle cx="4" cy="4" r="2.5" fill="none" stroke="#FFFFFF" stroke-width=".0760537" stroke-linecap="round"/>
+                <circle cx="4" cy="2.392863" r=".11972982" fill="#FFFFFF"/>
+                <path d="m2.75 5.25 1.25-2.25 1.25 2.25" fill="none" stroke="#FFFFFF" stroke-width=".0732656" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="m 3.2,4.5 c 0,0 0.1798612,0.2033346 0.3,0.2 0.1666025,-0.00462 0.2333333,-0.3 0.4,-0.3 0.1666667,0 0.2349951,0.276523 0.4,0.3 0.186944,0.026598 0.28,-0.45 0.53,-0.2" fill="none" stroke="#FFFFFF" stroke-width=".0732656" stroke-linecap="round"/>
+            </svg>
+            <h1>AUCENS</h1>
+            <h2>KLARE LUFT • KLARER KOPF</h2>
+            <svg id="flow" xmlns="http://www.w3.org/2000/svg" width="100%" height="150" viewBox="0 0 100 30" preserveAspectRatio="none">
+                <path fill="none" stroke="#efcbae" stroke-width="0.1" d="
+                    m 6.5630447,15.871638 c 0,0 13.0431613,6.222778 19.7601783,6.164974 5.581086,-0.04803 11.914676,-2.335482 16.381274,-5.404664 3.90775,-2.685176 6.27226,-9.6441643 10.236143,-9.459613 3.833531,0.1784824 6.287101,6.870308 9.532288,10.053245 2.871707,2.816621 8.997438,5.716091 13.725295,5.592282 5.592119,-0.146441 12.419225,-4.124323 16.082893,-7.460856 2.829519,-2.576867 5.547164,-9.4584546 9.240324,-9.5413652 6.986,-0.1568342 17.80464,17.2563962 17.80464,17.2563962
+                    M 6.5647412,14.128301 c 0,0 12.9251828,7.892437 19.7584818,7.801834 5.39608,-0.06561 11.203079,-3.100463 15.588706,-6.245174 3.906979,-2.813255 6.891176,-8.8326636 11.050808,-8.6602466 3.97711,0.1657526 7.007836,5.9483006 10.233179,9.1877546 2.867453,2.881627 8.345328,6.521581 12.908187,6.465662 5.482518,-0.05965 11.942409,-5.08071 15.482627,-8.29576 2.968057,-2.691691 6.114381,-8.6380503 9.96417,-8.7174017 6.81736,-0.1439244 17.76683,15.2907047 17.76683,15.2907047
+                    M 6.5664376,12.384963 c 0,0 12.8072044,9.562097 19.7567854,9.438694 5.211074,-0.08319 10.491482,-3.865443 14.796139,-7.085683 3.906207,-2.941334 7.51009,-8.0211629 11.865472,-7.8608801 4.120689,0.1530228 7.728572,5.0262931 10.934069,8.3222651 2.863201,2.946633 7.693219,7.327069 12.09108,7.33904 5.372917,0.02714 11.465592,-6.037096 14.882361,-9.130662 3.106594,-2.806516 6.681598,-7.817647 10.688026,-7.8934392 6.64871,-0.1310145 17.72901,13.3250132 17.72901,13.3250132
+                    M 6.568134,10.641625 c 0,0 12.689226,11.231756 19.755089,11.075555 5.026068,-0.100776 9.779885,-4.630424 14.003571,-7.926194 3.905437,-3.069412 8.129006,-7.2096612 12.680138,-7.0615127 4.264268,0.140293 8.449306,4.1042857 11.634959,7.4567747 2.858948,3.01164 7.041109,8.132559 11.273972,8.21242 5.263316,0.113929 10.988776,-6.993483 14.282095,-9.965566 3.245131,-2.9213398 7.248815,-6.9972427 11.411872,-7.0694758 6.48006,-0.1181045 17.6912,11.3593218 17.6912,11.3593218
+                    M 6.5698304,8.8982872 c 0,0 12.5712486,12.9014158 19.7533926,12.7124158 4.841063,-0.118358 9.068288,-5.395405 13.211004,-8.766704 3.904665,-3.1974907 8.74792,-6.3981605 13.494802,-6.2621462 4.407847,0.1275631 9.170041,3.1822778 12.33585,6.5912852 2.854694,3.076645 6.388999,8.938047 10.456864,9.085798 5.153714,0.200719 10.51196,-7.949869 13.681829,-10.800468 3.383668,-3.0361646 7.816032,-6.1768393 12.135718,-6.2455133 6.31142,-0.1051947 17.65339,9.3936293 17.65339,9.3936293
+                    M 6.5715269,7.1549495 c 0,0 12.4532701,14.5710755 19.7516961,14.3492755 4.656057,-0.13594 8.356691,-6.160385 12.418436,-9.607213 3.903895,-3.3255696 9.366835,-5.5866597 14.309467,-5.4627798 4.551426,0.1148334 9.890777,2.2602704 13.036741,5.7257948 2.850441,3.141652 5.73689,9.743537 9.639756,9.959178 5.044113,0.287509 10.035143,-8.906256 13.081563,-11.635372 3.522206,-3.1509884 8.383249,-5.356435 12.859574,-5.4215498 6.14276,-0.092285 17.61558,7.4279378 17.61558,7.4279378
+                    M 6.5732233,5.4116117 c 0,0 12.3352917,16.2407353 19.7499997,15.9861363 4.471051,-0.153522 7.645094,-6.925367 11.625869,-10.447724 3.903123,-3.4536476 9.98575,-4.775158 15.124131,-4.6634123 4.695006,0.1021035 10.611512,1.3382628 13.737631,4.8603053 2.846188,3.206658 5.084781,10.549026 8.822649,10.832556 4.934512,0.3743 9.558327,-9.862642 12.481297,-12.4702744 3.660743,-3.2658127 8.950466,-4.5360313 13.58342,-4.5975869 5.97412,-0.079375 17.57777,5.4622463 17.57777,5.4622463" />
+            </svg>
+            <h3>Unser kompakter Holz-Luftreiniger sorgt mit Filter und Aroma deiner Wahl für frische und saubere Luft an deinem Arbeitsplatz.</h3>
+            <button type="button">ANTEILSSCHEINE SICHERN</button>
+        </div>
+    </body>
+</html>
