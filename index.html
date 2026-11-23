@@ -1,128 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
     <head>
-        <title></title>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                margin: 0;
-                min-height: 100vh;
-                background: linear-gradient(135deg, #123531, #1B4440 50%, #2B5A54);
-                font-family: Arial, sans-serif;
-                color: #efcbae;
-            }
-
-            .menu-ribbon {
-                width: 100%;
-                background-color: transparent;
-            }
-
-            .menu-ribbon nav {
-                display: flex;
-                flex-wrap: nowrap;
-                align-items: center;
-                max-width: 1200px;
-                height: 72px;
-                margin: 0 auto;
-                padding: 0 clamp(8px, 3vw, 24px);
-            }
-
-            #logo {
-                width: clamp(64px, 20vw, 125px);
-                height: auto;
-                flex-shrink: 1;
-            }
-
-            .menu {
-                display: flex;
-                gap: clamp(12px, 2vw, 24px);
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                margin-left: auto;
-            }
-
-            .menu a {
-                display: block;
-                padding: 12px clamp(4px, 1.5vw, 18px);
-                border-radius: 6px;
-                color: #FFFFFF;
-                font-size: clamp(10px, 3.5vw, 16px);
-                font-weight: 600;
-                text-decoration: none;
-                white-space: nowrap;
-            }
-
-            .menu a:hover,
-            .menu a:focus {
-                background-color: rgba(255, 255, 255, 0.14);
-                color: #FFFFFF;
-            }
-
-            #splash {
-                display: flex;
-                width: 75%;
-                flex-direction: column;
-                align-items: center;
-                gap: 0.5rem;
-                margin: 2rem auto;
-                text-align: center;
-            }
-
-            #logo-large {
-                display: block;
-                width: clamp(120px, 20vw, 150px);
-                max-width: 100%;
-                height: auto;
-            }
-
-            #splash h1,
-            #splash h2 {
-                font-family: Cambria, serif;
-                margin: 0;
-            }
-
-            #splash h1 {
-                font-size: clamp(2.5rem, 6vw, 4rem);
-                letter-spacing: 0.2em;
-            }
-
-            #splash h2 {
-                font-size: clamp(1rem, 2.4vw, 1.5rem);
-            }
-
-            #flow {
-                height: 90px;
-            }
-
-            #splash h3 {
-                margin: 0;
-                font-weight: 400;
-            }
-
-            #splash button {
-                margin-top: 0.25rem;
-                padding: 18px 36px;
-                border: 1px solid #efcbae;
-                border-radius: 4px;
-                background: transparent;
-                color: #efcbae;
-                font: inherit;
-                font-size: 1.2rem;
-                font-weight: 700;
-                cursor: pointer;
-                transition: background-color 0.2s ease, color 0.2s ease;
-            }
-
-            #splash button:hover,
-            #splash button:focus-visible {
-                background-color: #efcbae;
-                color: #1B4440;
-            }
-
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AUCENS – Klare Luft, klarer Kopf</title>
+        <link rel="stylesheet" href="site.css">
     </head>
     <body>
         <header class="menu-ribbon">
@@ -135,10 +17,10 @@
                     <path d="m 3.2,4.5 c 0,0 0.1798612,0.2033346 0.3,0.2 0.1666025,-0.00462 0.2333333,-0.3 0.4,-0.3 0.1666667,0 0.2349951,0.276523 0.4,0.3 0.186944,0.026598 0.28,-0.45 0.53,-0.2" fill="none" stroke="#FFFFFF" stroke-width=".0732656" stroke-linecap="round"/>
                 </svg>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="anteilsscheine.html">Anteilsscheine</a></li>
                 </ul>
             </nav>
         </header>
@@ -151,7 +33,7 @@
             </svg>
             <h1>AUCENS</h1>
             <h2>KLARE LUFT • KLARER KOPF</h2>
-            <svg id="flow" xmlns="http://www.w3.org/2000/svg" width="100%" height="150" viewBox="0 0 100 30" preserveAspectRatio="none">
+            <svg id="flow" xmlns="http://www.w3.org/2000/svg" width="100%" height="150" viewBox="0 0 120 30" preserveAspectRatio="none">
                 <path fill="none" stroke="#efcbae" stroke-width="0.1" d="
                     m 6.5630447,15.871638 c 0,0 13.0431613,6.222778 19.7601783,6.164974 5.581086,-0.04803 11.914676,-2.335482 16.381274,-5.404664 3.90775,-2.685176 6.27226,-9.6441643 10.236143,-9.459613 3.833531,0.1784824 6.287101,6.870308 9.532288,10.053245 2.871707,2.816621 8.997438,5.716091 13.725295,5.592282 5.592119,-0.146441 12.419225,-4.124323 16.082893,-7.460856 2.829519,-2.576867 5.547164,-9.4584546 9.240324,-9.5413652 6.986,-0.1568342 17.80464,17.2563962 17.80464,17.2563962
                     M 6.5647412,14.128301 c 0,0 12.9251828,7.892437 19.7584818,7.801834 5.39608,-0.06561 11.203079,-3.100463 15.588706,-6.245174 3.906979,-2.813255 6.891176,-8.8326636 11.050808,-8.6602466 3.97711,0.1657526 7.007836,5.9483006 10.233179,9.1877546 2.867453,2.881627 8.345328,6.521581 12.908187,6.465662 5.482518,-0.05965 11.942409,-5.08071 15.482627,-8.29576 2.968057,-2.691691 6.114381,-8.6380503 9.96417,-8.7174017 6.81736,-0.1439244 17.76683,15.2907047 17.76683,15.2907047
@@ -162,7 +44,7 @@
                     M 6.5732233,5.4116117 c 0,0 12.3352917,16.2407353 19.7499997,15.9861363 4.471051,-0.153522 7.645094,-6.925367 11.625869,-10.447724 3.903123,-3.4536476 9.98575,-4.775158 15.124131,-4.6634123 4.695006,0.1021035 10.611512,1.3382628 13.737631,4.8603053 2.846188,3.206658 5.084781,10.549026 8.822649,10.832556 4.934512,0.3743 9.558327,-9.862642 12.481297,-12.4702744 3.660743,-3.2658127 8.950466,-4.5360313 13.58342,-4.5975869 5.97412,-0.079375 17.57777,5.4622463 17.57777,5.4622463" />
             </svg>
             <h3>Unser kompakter Holz-Luftreiniger sorgt mit Filter und Aroma deiner Wahl für frische und saubere Luft an deinem Arbeitsplatz.</h3>
-            <button type="button">ANTEILSSCHEINE SICHERN</button>
+            <a class="cta" href="anteilsscheine.html">ANTEILSSCHEINE SICHERN</a>
         </div>
     </body>
 </html>

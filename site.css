@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #123531, #1B4440 50%, #2B5A54);
+    color: #efcbae;
+    font-family: Arial, sans-serif;
+}
+
+.menu-ribbon nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 72px;
+    margin: 0 auto;
+    padding: 0 clamp(8px, 3vw, 24px);
+}
+
+#logo {
+    width: clamp(64px, 20vw, 125px);
+    height: auto;
+    flex-shrink: 1;
+}
+
+.menu {
+    display: flex;
+    gap: clamp(8px, 2vw, 24px);
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 12px clamp(4px, 1.5vw, 18px);
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: clamp(10px, 3.5vw, 16px);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+#splash {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#logo-large {
+    display: block;
+    width: clamp(120px, 20vw, 150px);
+    max-width: 100%;
+    height: auto;
+}
+
+#splash h1,
+#splash h2,
+.page-content h1,
+.page-content h2 {
+    margin: 0;
+    font-family: Cambria, serif;
+}
+
+#splash h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    letter-spacing: 0.2em;
+}
+
+#splash h2 {
+    font-size: clamp(1rem, 2.4vw, 1.5rem);
+}
+
+#flow {
+    height: 90px;
+}
+
+#splash h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 0.25rem;
+    padding: 18px 36px;
+    border: 1px solid #efcbae;
+    border-radius: 4px;
+    background: transparent;
+    color: #efcbae;
+    font: inherit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta:hover,
+.cta:focus-visible {
+    background-color: #efcbae;
+    color: #1B4440;
+}
+
+.page-content {
+    width: min(75%, 900px);
+    margin: clamp(2rem, 7vw, 5rem) auto;
+    text-align: center;
+}
+
+.page-content h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.page-content h2 {
+    margin: 2rem 0 0.75rem;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.page-content p {
+    max-width: 65ch;
+    margin: 0 auto 1rem;
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.7;
+}
+
+.page-content .cta {
+    margin-top: 1rem;
+}
+
+.placeholder {
+    padding: 1rem;
+    border: 1px solid rgba(239, 203, 174, 0.5);
+    border-radius: 6px;
+}
+
+.placeholder a {
+    color: inherit;
+}
+
+@media (max-width: 620px) {
+    .menu-ribbon nav {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .menu {
+        gap: 2px;
+    }
+
+    .menu a {
+        padding: 10px 4px;
+        font-size: clamp(9px, 2.8vw, 14px);
+    }
+
+    .page-content,
+    #splash {
+        width: 90%;
+    }
+
+    .cta {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}
