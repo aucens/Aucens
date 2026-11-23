@@ -5,6 +5,7 @@
 body {
     margin: 0;
     min-height: 100vh;
+    background: #1B4440;
     background: linear-gradient(135deg, #123531, #1B4440 50%, #2B5A54);
     color: #efcbae;
     font-family: Arial, sans-serif;
@@ -15,12 +16,14 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     max-width: 1200px;
+    width: 100%;
     min-height: 72px;
     margin: 0 auto;
     padding: 0 clamp(8px, 3vw, 24px);
 }
 
 #logo {
+    width: 125px;
     width: clamp(64px, 20vw, 125px);
     height: auto;
     flex-shrink: 1;
@@ -31,6 +34,7 @@ body {
     gap: clamp(8px, 2vw, 24px);
     margin: 0 0 0 auto;
     padding: 0;
+    min-width: 0;
     list-style: none;
 }
 
@@ -115,7 +119,8 @@ body {
 }
 
 .page-content {
-    width: min(75%, 900px);
+    width: 75%;
+    max-width: 900px;
     margin: clamp(2rem, 7vw, 5rem) auto;
     text-align: center;
 }
@@ -174,5 +179,33 @@ body {
     .cta {
         padding: 14px 20px;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    #logo {
+        width: 64px;
+    }
+
+    .menu-ribbon nav {
+        height: auto;
+    }
+
+    .menu a {
+        padding-right: 2px;
+        padding-left: 2px;
+        font-size: 9px;
+    }
+
+    #splash,
+    .page-content {
+        width: calc(100% - 16px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cta,
+    .menu a {
+        transition: none;
     }
 }
